@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en kn">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "UTF-8" />
+        <link rel = "icon" href = "images/logo3.png" type = "Images/png">
+        <title>HMS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body >
+        
+        <h1> WELCOME TO HOSPITAL MANAGEMENT SYSTEM</h1>
+        <h2>Manage all data at one place</h2>
+        <div class="Main_menu">
+            <h3> Please select user type</h3>
+            <div class="flexitem"><button id="doctor">Doctor Login</button></div>
+            <div class="flexitem"><button id="Patient">Patient Login</button></div>
+            <div class="flexitem"><button id="FD">Front Desk User Login</button></div>
+            <div class="flexitem"><button id="Admin">Admin Login</button></div>
+            
+
+        </div>
+        <div id="doctor_log">
+            <h3>Hi Doctor</h3><br>
+            <form action="" id="dr_login-form" method="post" onsubmit="return false">
+                <label for="dr_username">Please Enter Doctor ID</label><br>
+                <input type="text" id="dr_username" name="username" placeholder="Doctor Username" class="login-field"  required pattern="[0-9]{4,}">
+                <br>
+                <label for="dr_password">Please Enter password</label><br>
+                <input type="password" id="dr_password" name="password" placeholder="Doctor Password" class="login-field" required>
+                <br>
+                <button  id="login_submit1">Login</button>
+            </form>
+
+        </div>
+        <div id="admin_log" >
+            <h3>Hi Admin</h3><br>
+            <form action="login.php" id="admin_login-form" method="post" onsubmit="return false">
+                <label for="Admin_username">Please Enter Admin ID</label><br>
+                <input type="text" id="Admin_username" name="username" placeholder="Admin Username" class="login-field"  required pattern="[0-9]{4,}">
+                <br>
+                <label for="dr_password">Please Enter password</label><br>
+                <input type="password" id="Admin_password" name="password" placeholder="Admin Password" class="login-field" required>
+                <br>
+                <button type="submit" id="login_submit2">Login</button>
+            </form>
+
+        </div>
+        <div id="Fd_log">
+            <h3>Hi Front Desk user</h3><br>
+            <form action="" id="Fd_login-form" method="post" onsubmit="return false">
+                <label for="Admin_username">Please Enter Front desk user ID</label><br>
+                <input type="text" id="Fd_username" name="username" placeholder="Front desk Username" class="login-field"required pattern="[0-9]{4,}">
+                <br>
+                <label for="Fd_password">Please Enter password</label><br>
+                <input type="password" id="Fd_password" name="password" placeholder="Front desk user Password" class="login-field" required>
+                <br>
+                <button type="submit" id="login_submit3">Login</button>
+            </form>
+
+        </div>
+        <div id="patient_log">
+            <h3>Welcome user</h3><br>
+            <form action="" id="patient_login-form" method="post" onsubmit="return false">
+                <label for="patient_username">Please Enter patient ID</label><br>
+                <input type="text" id="Patient_username" name="username" placeholder="Patient Username" class="login-field" required pattern="[0-9]{4,}">
+                <br>
+                <label for="Patient_password">Please Enter password</label><br>
+                <input type="password" id="Patient_password" name="password" placeholder="Patient Password" class="login-field" required>
+                <br>
+                <button type="submit"  id="login_submit4">Login</button>
+            </form>
+
+        </div>
+        <!-- <div id="patient_option">
+           <div class="patient_option">
+              
+            <button id="view_report">View report</button>
+            <button id="download_report">Download Report</button>
+           </div>
+
+            <div id="show_data">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Welcome user</h2>
+            </div>
+            <button id="patient_back">close</button>
+
+
+          
+        </div> -->
+        
+        <div id="back">
+            <button id="back_btn">Back</button>
+
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
